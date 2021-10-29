@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  height: 100vh;
+  background: #BBD2C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+h1 {
+  font-size: 3rem;
+  text-shadow: #000 0px 0px 2px;
+  color: #fff;
+}
+
+h2 {
+  color: darkslategray;
+  margin: 4rem auto;
+
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  background-color: goldenrod;
+  border: 20px solid beige;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button:hover {
+  outline: 10px solid red;
+}
+ 
+button:hover div {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+}
+
+button:active {
+  transform: scale(.98);
+}
