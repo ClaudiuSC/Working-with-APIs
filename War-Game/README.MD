@@ -16,19 +16,27 @@ Oher things that I used and think are noteworthy:
 
 
 **Example:**
-console.log('Using a valid case:', ({
-  1: 'One',
-  2: 'Two',  
-  3: 'Three'  
-})[1] ?? 'Default')
+<!-- begin snippet: js hide: false console: true babel: null -->
 
+<!-- language: lang-js -->
 
-console.log('Using an invalid case/defaulting:', ({
-  1: 'One',  
-  2: 'Two',  
-  3: 'Three'  
-})[7] ?? 'Default')
+    console.log('Using a valid case:', ({
+      1: 'One',
+      2: 'Two',
+      3: 'Three'
+    })[1] ?? 'Default')
 
+    console.log('Using an invalid case/defaulting:', ({
+      1: 'One',
+      2: 'Two',
+      3: 'Three'
+    })[7] ?? 'Default')
+
+<!-- language: lang-css -->
+
+    .as-console-wrapper {max-height: 100% !important;top: 0;}
+
+<!-- end snippet -->
 
 
 
