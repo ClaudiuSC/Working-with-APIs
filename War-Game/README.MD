@@ -16,27 +16,17 @@ Oher things that I used and think are noteworthy:
 
 
 **Example:**
-
 console.log('Using a valid case:', ({
-
   1: 'One',
-  
-  2: 'Two',
-  
-  3: 'Three'
-  
+  2: 'Two',  
+  3: 'Three'  
 })[1] ?? 'Default')
 
 
-
 console.log('Using an invalid case/defaulting:', ({
-
-  1: 'One',
-  
-  2: 'Two',
-  
-  3: 'Three'
-  
+  1: 'One',  
+  2: 'Two',  
+  3: 'Three'  
 })[7] ?? 'Default')
 
 
