@@ -1,0 +1,122 @@
+* {
+    box-sizing: content-box;
+  }
+  
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+ 
+/* layout */
+.container {
+  height: 600px;
+  width: 429px;
+  border-radius: 5px;
+  background-image: url(images/table.png);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-of-table {
+  align-self: flex-start;
+}
+
+#computer-card,
+#player-card {
+  height: 168px;
+  width: 120.9176788124157px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#computer-card {
+  margin-bottom: 1rem;
+}
+
+/* general styling */
+h1 {
+  letter-spacing: 5px;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+/* h1 animation */
+.expand-text {
+  animation-duration: 1s;
+  animation-name: expand;
+}
+
+@keyframes expand {
+  50% {
+    letter-spacing: 25px;
+  }
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* overlay & endgame message */
+.overlay {
+  height: 600px;
+  width: 429px;
+  position: absolute;
+  background-color: rgba(129, 129, 129, 0.5);
+  display: none;
+}
+
+#end-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: tomato;
+  padding: 30px 50px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+/* button styling */
+.btn {
+  background-color: yellow;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+#shuffle-btn {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+}
+
+#draw-btn {
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  width: 100%;
+}
+
+#draw-btn:disabled {
+  background-color: lightgrey;
+}
+
