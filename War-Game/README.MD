@@ -34,8 +34,6 @@ Oher things that I used and think are noteworthy:
 
 <!-- language: lang-css -->
 
-    .as-console-wrapper {max-height: 100% !important;top: 0;}
-
 <!-- end snippet -->
 
 
