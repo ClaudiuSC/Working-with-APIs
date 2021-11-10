@@ -13,17 +13,30 @@ Oher things that I used and think are noteworthy:
 * setTimeout to remove a class from an h1(i used this method so that it animates every time i add that class)
 * a method to avoid using the switch operator, creating an object which options/cases are the keys and the results are their values. By putting the option into the brackets you
 *  access the value of the key that matches the expression via the bracket notation. 
+
+
 **Example:**
+
 console.log('Using a valid case:', ({
+
   1: 'One',
+  
   2: 'Two',
+  
   3: 'Three'
+  
 })[1] ?? 'Default')
 
+
+
 console.log('Using an invalid case/defaulting:', ({
+
   1: 'One',
+  
   2: 'Two',
+  
   3: 'Three'
+  
 })[7] ?? 'Default')
 
 
