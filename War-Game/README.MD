@@ -37,7 +37,7 @@ Oher things that I used and think are noteworthy:
 <!-- end snippet -->
 
 
-Improvements:
+**Improvements:**
 * when cards have the same value none of the players earn the point and the game carries on: implement mechanic that deals with a draw.
 
 
