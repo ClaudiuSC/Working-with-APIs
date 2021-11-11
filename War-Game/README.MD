@@ -1,9 +1,9 @@
 **War card game**
 
 I used the https://deckofcardsapi.com/ API to create a war card game.
-It features a button that fetches a shuffled deck from the API and a button that draws two card from that deck. The API gives you the option to draw any number of cards at a time 
+It features a button that fetches a shuffled deck from the API and a button that draws two cards from that deck. The API gives you the option to draw any number of cards at a time 
 from the deck you requested, and updates the remaining cards.
-The app compares the values of the two cards and keeps score of the game. When the deck is depleted the game ends and an overlay appears in which the winner is declared and you have
+The game compares the values of the two cards and keeps score of the game. When the deck is depleted the game ends and an overlay appears in which the winner is declared and you have
 a reset button to play another game.
 
 
