@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Lucida Console", Monaco, monospace; 
+  background-color: thistle;
+}
+
+.user-card-header,
+.user-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.user-card-header {
+  background-color: tomato;
+}
+
+.user-card-footer {
+  background-color: cornsilk;
+}
+
+.user-card-header h2 {
+  margin-bottom: .3rem;
+}
+
+.user-card-header a,
+.user-card-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-card-footer {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.user-card-header span {
+  font-size: 1.2rem;
+}
+
+.user-card {
+  background-color: wheat;
+
+}
+
+.user-card-workplace {
+  margin: 2rem 1rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: .5rem;
+  background-color: rgba(255, 255, 255, 0.726);
+  text-align: center;
+}
