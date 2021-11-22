@@ -22,20 +22,23 @@ function renderUsers(users, compare) {
 
 myUsers().then(users => {   
 
-    document.body.innerHTML = `
-        <div class="container">${renderUsers(users)}</div>
-        <div>
-            <button id="sort-name">Sort by Name</button></br>
-            <button id="sort-status">Sort by Status</button>
+    document.querySelector("main").innerHTML = `
+        <div class="chat-container">
+            <div class="user-container">${renderUsers(users)}</div>
+            <div class="btns">
+                <button id="sort-name">Sort by Name</button></br>
+                <button id="sort-status">Sort by Status</button>
+            </div>
         </div>
+        <div class="main-content">Main Content</div>
     `
 
     document.getElementById("sort-status").addEventListener("click", () => {
-        document.querySelector(".container").innerHTML = renderUsers(users, compareStatus)
+        document.querySelector(".user-container").innerHTML = renderUsers(users, compareStatus)
     })
     
     document.getElementById("sort-name").addEventListener("click", () => {
-        document.querySelector(".container").innerHTML = renderUsers(users, compareUsername)
+        document.querySelector(".user-container").innerHTML = renderUsers(users, compareUsername)
     })
 })
 
