@@ -9,4 +9,4 @@ V2 changes:
 - the show's content now features a "back" arrow that renders the search results back on the page;
 - to display the search list and the show's content in the same div i modified the css property grid-auto-rows.
 
-**Requires refactoring
+**Requires refactoring**
