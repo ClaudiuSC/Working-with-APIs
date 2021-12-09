@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: paleturquoise;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 700px;
+  background-color: seashell;
+}
+
+.api-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  background-color: lightsalmon;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.api-card .api-name,
+.api-card .api-category {
+  grid-column: 1 / -1;
+}
+
+.api-card .api-name {
+  margin-bottom: 0;
+  color:rgb(36, 36, 36)
+}
+
+.api-card .api-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.api-card .api-category {
+  font-size: .8rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.api-card .api-description {
+  grid-column: 1 / -1;
+  margin-bottom: 1.5rem;
+  color: lightyellow;
+}
+
+.api-card .api-auth {
+  grid-column: 1 / 3;
+}
+
+.api-card .api-https {
+  grid-column: 4 / -1;
+}
+
+.api-card .api-https,
+.api-card .api-auth {
+  font-size: .9rem;
+  text-align: start;
+  color: rgb(58, 58, 58);
+}
+
+.api-card .border {
+  border-bottom: 1px solid seashell;
+  grid-column: 1 / -1;
+  margin-bottom: .5rem;
+}
